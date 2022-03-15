@@ -1,5 +1,6 @@
 import React from "react";
 import './CitySelect.css';
+import { Link } from "react-router-dom";
 
 import Card from '../utilityComponents/Card';
 import CitySelectBubble from './CitySelectBubble';
@@ -13,6 +14,7 @@ const CitySelect = () => {
       <div className="citySelect">
         {cities.map(city => <CitySelectBubble cityName={city} />)}
       </div>
+      <Link to="/CitySelect">City Select</Link>
     </Card>
   );
 }
