@@ -1,9 +1,16 @@
-import React from "react";
+import React, {useContext, useEffect} from "react";
 import './WelcomePage.css';
 
 import CitySelect from "../components/CitySelect";
+import MusicContext from "../context/MusicContext";
 
 const WelcomePage = () => {
+  const { loadShows } = useContext(MusicContext);
+
+  useEffect(() => {
+    loadShows();
+  }, []);
+
   return (
     <section className="welcomePageContainer">
       <div className="hero-image">FineTime</div>

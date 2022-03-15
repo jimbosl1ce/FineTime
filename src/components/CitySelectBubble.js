@@ -1,9 +1,12 @@
 import React from "react";
 import './CitySelectBubble.css';
 
-const CitySelect = ({ cityName }) => {
+const CitySelect = ({ cityName, bubbleSelect }) => {
   return (
-    <span className="city-bubble">
+    <span
+      onClick={() => bubbleSelect(cityName)}
+      className="city-bubble"
+    >
       {cityName}
     </span>
   );

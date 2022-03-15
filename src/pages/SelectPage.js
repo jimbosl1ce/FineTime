@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
+import MusicContext from "../context/MusicContext";
 // import './SelectPage.css';
 
 
 const SelectPage = () => {
+  const { selectedCity } = useContext(MusicContext);
+  console.log(selectedCity)
   return (
     <section className="SelectPageContainer">
-      I am select page
+      {selectedCity}
     </section>
   );
 }
