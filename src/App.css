@@ -1,0 +1,33 @@
+.main {
+  display: flex;
+  flex: 1;
+  max-width: 1500px;
+  margin: 0 auto;
+  background: rgb(177, 176, 176);
+  height: 100vh;
+}
+
+.navbar {
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  padding-left: 25px
+}
+
+.signup {
+  display: flex;
+  gap: 20px;
+  padding-right: 25px
+}
+
+.signup li {
+ list-style: none;
+}
+
+.signup li a {
+  text-decoration: none;
+}

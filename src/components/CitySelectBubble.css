@@ -1,0 +1,9 @@
+.city-bubble {
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: rgb(0, 227, 252);
+}

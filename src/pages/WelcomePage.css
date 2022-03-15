@@ -1,0 +1,26 @@
+.welcomePageContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 350px;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://images.unsplash.com/photo-1621911414461-88bc315889d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.usp-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.usp-box h3 {
+  margin: 5px 0;
+}
