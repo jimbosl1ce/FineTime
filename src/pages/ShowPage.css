@@ -39,3 +39,22 @@
   width: 100%;
   overflow: hidden;
 }
+
+.yelpContainer {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 70%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.yelp-separator1 {
+  flex-basis: 49%;
+  min-height: 200px;
+  border: 1px solid black;
+}
+.yelp-separator2 {
+  flex-basis: 49%;
+  min-height: 200px;
+  border: 1px solid black;
+}

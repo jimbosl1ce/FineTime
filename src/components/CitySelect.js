@@ -7,32 +7,48 @@ import MusicContext from "../context/MusicContext";
 import Card from '../utilityComponents/Card';
 import CitySelectBubble from './CitySelectBubble';
 
-const cities = ['Chicago', 'Denver', 'London', 'Los Angeles', 'New York', 'San Francisco', 'Seattle', 'Washington, D.C.']
-
-const CitySelect = () => {
+const CitySelect = ({text=undefined, data=undefined, link=undefined}) => {
   const { selectCity } = useContext(MusicContext);
 
   const bubbleSelect = (city) => {
     selectCity(city)
   }
+  if (link) {
+    return (
+      <Card>
+        {text}
+        <div className="citySelect">
+          {data.map((city, index) => {
+            return (
+              <Link key={city + index} to={link}>
+                <CitySelectBubble
+                  cityName={city}
+                  bubbleSelect={bubbleSelect}
+                />
+              </Link>
+            )
+          })}
+        </div>
+      </Card>
+    );
+  } else {
+    return (
+      <Card>
+        {text}
+        <div className="citySelect">
+          {data.map((city, index) => {
+            return (
+                <CitySelectBubble
+                  cityName={city}
+                  bubbleSelect={bubbleSelect}
+                />
+            )
+          })}
+        </div>
+      </Card>
+    );
 
-  return (
-    <Card>
-      Let's get started! Select Your City:
-      <div className="citySelect">
-        {cities.map((city, index) => {
-          return (
-            <Link key={city + index} to="/cityselect">
-              <CitySelectBubble
-                cityName={city}
-                bubbleSelect={bubbleSelect}
-              />
-            </Link>
-          )
-        })}
-      </div>
-    </Card>
-  );
+  }
 }
 
 export default CitySelect;

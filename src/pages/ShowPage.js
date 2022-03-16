@@ -4,6 +4,8 @@ import YelpRecs from '../components/YelpRecs'
 import MusicContext from "../context/MusicContext";
 import './ShowPage.css';
 
+import ShowSelect from '../components/ShowSelect';
+
 
 const item = {
   "id": "gnKu_z4fkV9rKdVVQLBgTw",
@@ -93,17 +95,32 @@ const ShowPage = () => {
         </a>
       </div>
     <h1>Nearby bars:</h1>
-    {(cocktailBars.length > 0) && cocktailBars.map((bar, index) => {
-      if (index < 6) {
-        return <YelpRecs item={bar} />
-      }
-    })}
-    <h1>Nearby restaurants:</h1>
-    {(restaurants.length > 0) && cocktailBars.map((bar, index) => {
-      if (index < 6) {
-        return <YelpRecs item={bar} />
-      }
-    })}
+
+      <div className="yelpContainer">
+        <div className="yelp-separator2">
+          <h3 className="h3"> Restaurant Ideas near {selectedCity}</h3>
+          {(restaurants.length > 0) && <div className="showGrid">
+            {restaurants.map(bar => {
+              return (
+                  <ShowSelect yelpItem={bar}/>
+              )
+            })}
+          </div>}
+        </div>
+        <div className="yelp-separator1">
+          <h3 className="h3"> Bar Ideas near {selectedCity}</h3>
+          {(cocktailBars.length > 0) && <div className="showGrid">
+            {cocktailBars.map(bar => {
+              return (
+                  <ShowSelect yelpItem={bar}/>
+              )
+            })}
+          </div>}
+        </div>
+
+
+
+      </div>
     </section>
   );
 }

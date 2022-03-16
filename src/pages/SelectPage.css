@@ -1,8 +1,97 @@
+.SelectPageContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 1;
+  gap: 25px;
+}
+
 .showContainer {
   display: flex;
+  flex-basis: 70%;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
-.card {
-  
+.h3 {
+  padding-left: 50px;
+  font-family: Inter;
+  font-size: 25px;
+}
+
+.showGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  flex-direction: row;
+}
+
+.metaContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+  min-width: 350px;
+  flex-basis: 30%;
+  padding: 15px;
+  background-color:rgba(190, 240, 244, 0.461);
+  gap: 2em;
+}
+
+.meta-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  flex-basis: 100%;
+  max-height: 300px;
+}
+
+.meta-image::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.523);
+  content: "";
+}
+
+.meta-city-text {
+  position: absolute;
+  font-weight: 700;
+  font-size: 25px;
+  top: 40%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, 50%);
+  z-index: 2;
+}
+
+.meta-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.meta-input {
+  display: flex;
+  gap: 1px;
+  flex-direction: column;
+  justify-content: center;
+  align-self: stretch;
+}
+
+.meta-input input {
+  font-family: 'Lobster';
+  font-size: 25px;
+  border: none;
+  padding: 15px;
+  min-width: 80%;
+  border-radius: 5px;
+  transition: all 0.1s ease-in;
+}
+
+.meta-input input:focus {
+  transform: rotate(1deg) scale(1.1);
 }

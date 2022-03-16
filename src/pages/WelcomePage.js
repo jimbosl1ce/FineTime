@@ -11,6 +11,10 @@ const WelcomePage = () => {
     loadShows();
   }, []);
 
+  const text = "Let's get started! Select your city:"
+  const cities = ['Chicago', 'Denver', 'London', 'Los Angeles', 'New York', 'San Francisco', 'Seattle', 'Washington, D.C.']
+  const link = "/cityselect"
+
   return (
     <section className="welcomePageContainer">
       <div className="image-container">
@@ -18,7 +22,7 @@ const WelcomePage = () => {
       </div>
       <div className="text-container">
         <div className="h1">FineTime</div>
-        <CitySelect />
+        <CitySelect text={text} data={cities} link={link}/>
       </div>
     </section>
   );

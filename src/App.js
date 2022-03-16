@@ -12,7 +12,6 @@ import ShowPage from './pages/ShowPage';
 import MusicState from './context/MusicState';
 
 function App() {
-
   return (
     <MusicState>
       <div className="navbar">
