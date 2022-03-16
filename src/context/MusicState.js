@@ -5,6 +5,7 @@ import axios from 'axios';
 import {
   SELECT_CITY,
   GET_SHOWS,
+  SELECT_SHOW,
   ERROR
 } from './types.js';
 
@@ -12,8 +13,9 @@ import {
 
 const MusicState = ({ children }) => {
   const initalState = {
-    shows: null,
+    shows: [],
     selectedCity: null,
+    selectedShow: null,
     error: null,
   }
 
@@ -41,55 +43,21 @@ const MusicState = ({ children }) => {
     }
   };
 
-  // EXAMPLES...
-  // const getProductStyles = async (productId) => {
-  //   try {
-  //     const res = await axios.get(`/products/${productId}/styles`)
-  //     dispatch({
-  //       type: GET_PRODUCT_STYLES,
-  //       payload: res.data.results
-  //     })
-  //   } catch (err) {
-  //     dispatch({
-  //       type: ERROR,
-  //       payload: err.message
-  //     })
-  //   }
-  // }
-
-  // EXAMPLE OF LOCAL STATE CHANGE
-  // const changeProduct = (productId) => {
-  //   dispatch({
-  //     type: CHANGE_PRODUCT,
-  //     payload: productId
-  //   })
-  // }
-
-  // EXAMPLE OF SERVER REQUEST
-  // const getMetaData = (productId) => {
-  //   console.log(productId);
-  //   axios.get(`/productmeta/${productId}`)
-  //   .then(data => {
-  //     // setMeta(data.data)
-  //     dispatch({
-  //       type: GET_PRODUCT_META,
-  //       payload: data.data
-  //     });
-  //   })
-  //   .catch(err => {
-  //     dispatch({
-  //       type: ERROR,
-  //       payload: err.message
-  //     });
-  //   });
-  // }
+  const setSelectedShow = (selectedShow) => {
+    dispatch({
+      type: SELECT_SHOW,
+      payload: selectedShow
+    })
+  }
 
   return (
     <MusicContext.Provider value={{
       selectedCity: state.selectedCity,
+      selectedShow: state.selectedShow,
       shows: state.shows,
       selectCity,
-      loadShows
+      loadShows,
+      setSelectedShow
     }}>
       { children }
     </MusicContext.Provider>

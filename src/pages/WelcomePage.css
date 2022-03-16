@@ -1,3 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lobster&family=Space+Mono:wght@400;700&display=swap');
+
+.welcomePageContainer {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  gap: 25px;
+}
+
+.image-container {
+  min-height: 1000px;
+  flex-basis: 70%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.hero-image {
+  object-fit: cover;
+}
+
+.text-container {
+  font-family: 'Inter';
+  /* border: 1px solid black; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 350px;
+  flex-basis: 30%;
+  display: flex;
+  padding: 25px;
+}
+
+.h1 {
+  font-family: 'Inter';
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 84px;
+}
+
+.navbar {
+  font-family: 'Inter';
+  font-size: 22px;
+  font-weight: 700;
+}
+
+
+
+
+
+/*
+
 .welcomePageContainer {
   display: flex;
   flex: 1;
@@ -6,6 +57,7 @@
 
 .hero-image {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
@@ -14,6 +66,7 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .usp-box {
   display: flex;
   justify-content: space-around;
@@ -23,4 +76,4 @@
 
 .usp-box h3 {
   margin: 5px 0;
-}
+} */

@@ -1,0 +1,41 @@
+.showPageContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.textContainer {
+  margin-bottom: 25px;
+}
+
+.yelp-recs {
+  margin: 0 auto;
+  border: 1px solid black;
+  width: 90%;
+}
+
+.yelp-result {
+  display: flex;
+  height:200px;
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.image-container {
+  height: 100%;
+  width: 55px;
+}
+.yelp-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px 20px;
+}
+
+.image-container img {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}

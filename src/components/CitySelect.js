@@ -20,11 +20,10 @@ const CitySelect = () => {
     <Card>
       Let's get started! Select Your City:
       <div className="citySelect">
-        {cities.map(city => {
+        {cities.map((city, index) => {
           return (
-            <Link to="/cityselect">
+            <Link key={city + index} to="/cityselect">
               <CitySelectBubble
-                key={city}
                 cityName={city}
                 bubbleSelect={bubbleSelect}
               />

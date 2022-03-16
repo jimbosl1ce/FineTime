@@ -13,13 +13,13 @@ const WelcomePage = () => {
 
   return (
     <section className="welcomePageContainer">
-      <div className="hero-image">FineTime</div>
-      <div className="usp-box">
-        <h3>Easy Planning.</h3>
-        <h3>Unique Experiences.</h3>
-        <h3>Excellent Music.</h3>
+      <div className="image-container">
+        <img className="hero-image" src={require('./sofar.jpeg')} />
       </div>
-      <CitySelect />
+      <div className="text-container">
+        <div className="h1">FineTime</div>
+        <CitySelect />
+      </div>
     </section>
   );
 }
