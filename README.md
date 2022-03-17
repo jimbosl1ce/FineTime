@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Project ECOM
+Project ECOM is a single page e-commerce web application created utilizing React and Node/Express. This project was created by a team of three engineers at DJAM Industries.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Screenshot](https://lh3.googleusercontent.com/AAPYPaNZHATpQ6PHi5UMdLfMHpYn6KRtCeAcgr4jrc6ATkKDY-E273nXeOolGe9g17X5RRYSpKjxrPGdvUBmTSVpCLIyLstG0nWg5FjD78xsbxtT9qNxBJBXxEjz-0cYeE7aGYqZZb-vHiBjWqo8Jx5FQmgLCLmC_Nj_xBOCea7JJFLg5a_wFsuk54xEkvVgSSSBaRJfHC99zrCPlaQgF-TXd5nmB99KGLYQFew5GcFmc-gDgbPIBcBzuip3EPXv8RuH_Mn5L4Iza6h0w0laqoFmRZIKXTdcQCUCtzOhFulBnBGqHjfbRN-4NJ5o6KmOchpleBujVl_Cod1_VTyo5DTH9jz4WE06-Bdvpd_VloeNW_Ytns91ceddhGn9XTulfFh4hHH0meJKASF1ChUtIHvbX9Jp8sH39PqHWmAONWou--R3dKUlUvRMZPDw9tZMBa3_oruOK_VXocENWSBHiRS5QmMqzWrWvjYbwSPdOtQvQsbxESVYJgP_tbOEGm5fyhty_fejGZ2GopNybgjjIXKCbv1sCQTWULUcIMEPWQpnj5X0KR_DfzuulE2Gi96eYEcoA5w4sA4XtEmU820QYbC7qz3UNA_bQ8FMNzkIvwdELKJWOKXNTrhY_R3UUDQ3ceSJzxha7ie06aXmiCUMBEsu7-c13HSl3Lq1ktvhX-dTpcqVY82HzjRzx1puEBqOIq1prw0y_CFtQECYBb1oaiZjQA=w600-h465-no?authuser=0)
 
-## Available Scripts
+## :heavy_check_mark: Features
 
-In the project directory, you can run:
+### Product Overview
 
-### `npm start`
+* Cycle through different photos of the same style using the carousel
+* Click thumbnails to view different styles of the same product
+* Click on image to zoom with highlight box
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Related Items
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* Create your own outfits by adding items to the list
+* Cycle through your outfit with the carousel
+* Get ideas on outfits with the 'Wear it with' section
+* Compare items at a touch of a button
 
-### `npm test`
+### Ratings And Reviews
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* See how others have rated products
+* Add your own review to products
+* Search reviews for products
+* Leave ratings
 
-### `npm run build`
+### Questions And Answers
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Add Questions about products
+* Search Questions already asked
+* See answers others have posted
+* Add Answers about products
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## :heavy_check_mark: Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+npm install
+```
 
-### `npm run eject`
+## Setup
+* Rename tokens.example.js to tokens.js
+* Create a .env file
+* Add HR_TOKEN=githubtoken
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+In two different terminals run
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+npm run react-prod
+npm run startprod
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+open
 
-## Learn More
+```
+http://localhost:3000/
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## :heavy_check_mark: Credit
+DJAM Industries is
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Austin Beyaoju](https://github.com/Beyaoju)
+<br>
+[Jimmy Hogerty](https://github.com/jimbosl1ce)
+<br>
+[Matthew Chang](https://github.com/changerbang)
+<br>
+[Daniel Kim](https://github.com/leinad520)
