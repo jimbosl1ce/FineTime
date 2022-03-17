@@ -1,7 +1,7 @@
 import React from "react";
 import './CitySelectBubble.css';
 
-const CitySelect = ({ key, cityName, bubbleSelect }) => {
+const CitySelect = ({ key, cityName, bubbleSelect, onNeighborhoodClick }) => {
 return (
     <span
       key={key}

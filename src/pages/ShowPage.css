@@ -43,7 +43,8 @@
 .yelpContainer {
   display: flex;
   flex-direction: row;
-  flex-basis: 70%;
+  flex: 1;
+  flex-basis: 100%;
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -51,10 +52,23 @@
 .yelp-separator1 {
   flex-basis: 49%;
   min-height: 200px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 .yelp-separator2 {
   flex-basis: 49%;
   min-height: 200px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+}
+
+.clearBtn {
+  position: absolute;
+  left: 60%;
+  top: 6.8%;
+  padding: 10px;
+  background-color: rgba(129, 222, 205, 0.927);
+  border-radius: 50px;
+  color: #333;
+}
+.clearBtn:hover {
+  cursor: pointer;
 }

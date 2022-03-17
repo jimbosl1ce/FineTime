@@ -18,7 +18,7 @@ const ShowSelect = ({ show = undefined, yelpItem = undefined }) => {
       <Card className="show-card">
         {checkIfNull(hasKey) && <div className="special">{checkIfNull(hasKey)}</div>}
         <div className="show-img-container">
-          <img className="show-img" src={'https://bit.ly/3CKaj3f'}/>
+          <img className="show-img" alt="city-view" src={'https://bit.ly/3CKaj3f'}/>
         </div>
         <div className="text-container-show">
           <div className="location">{location}</div>
@@ -27,18 +27,21 @@ const ShowSelect = ({ show = undefined, yelpItem = undefined }) => {
       </Card>
     );
   } else {
-    const { image_url, name, rating, review_count, is_closed } = yelpItem
+    const { image_url, name, rating, review_count, is_closed, url } = yelpItem
+
     return (
+      <a className="no-decoration" target="_blank" rel="noreferrer" href={url}>
       <Card className="show-card">
         <div className="show-img-container">
-          <img className="show-img" src={image_url}/>
+          <img className="show-img" alt="city-view" src={image_url}/>
         </div>
         <div className="text-container-show">
           <div className="location">{name}</div>
           <div className="font-style">{rating} out of {review_count} reviews</div>
-          <div className="font-style">{is_closed ? 'Closed' : 'Open'}</div>
+          <div className="isOpen">{is_closed ? 'Closed' : 'Open'}</div>
         </div>
       </Card>
+      </a>
     );
   }
 }

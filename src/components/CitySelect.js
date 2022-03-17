@@ -7,7 +7,7 @@ import MusicContext from "../context/MusicContext";
 import Card from '../utilityComponents/Card';
 import CitySelectBubble from './CitySelectBubble';
 
-const CitySelect = ({text=undefined, data=undefined, link=undefined}) => {
+const CitySelect = ({text=undefined, data=undefined, link=undefined, onNeighborhoodClick}) => {
   const { selectCity } = useContext(MusicContext);
 
   const bubbleSelect = (city) => {
@@ -40,7 +40,7 @@ const CitySelect = ({text=undefined, data=undefined, link=undefined}) => {
             return (
                 <CitySelectBubble
                   cityName={city}
-                  bubbleSelect={bubbleSelect}
+                  bubbleSelect={onNeighborhoodClick}
                 />
             )
           })}

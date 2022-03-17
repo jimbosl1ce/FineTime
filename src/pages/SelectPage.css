@@ -9,7 +9,7 @@
 .showContainer {
   display: flex;
   flex-basis: 70%;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
@@ -22,8 +22,8 @@
 .showGrid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 50px;
+  justify-content: flex-start;
+  gap: 20px;
   flex-direction: row;
 }
 
@@ -33,6 +33,7 @@
   justify-content: flex-start;
   flex: 1;
   min-width: 350px;
+  min-height: 900px;
   flex-basis: 30%;
   padding: 15px;
   background-color:rgba(190, 240, 244, 0.461);

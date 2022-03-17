@@ -107,6 +107,7 @@ const ShowPage = () => {
             })}
           </div>}
         </div>
+
         <div className="yelp-separator1">
           <h3 className="h3"> Bar Ideas near {selectedCity}</h3>
           {(cocktailBars.length > 0) && <div className="showGrid">
@@ -117,9 +118,6 @@ const ShowPage = () => {
             })}
           </div>}
         </div>
-
-
-
       </div>
     </section>
   );

@@ -71,3 +71,24 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.isOpen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: rgba(12, 118, 2, 0.673);
+  position: absolute;
+  font-family: 'Inter';
+  color: white;
+  font-size: .8em;
+  border-radius: 50px;
+  width: 50px;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.no-decoration {
+  text-decoration: none;
+}
