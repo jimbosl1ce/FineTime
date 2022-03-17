@@ -26,6 +26,7 @@ Enter FineTime!
 * MongoDB - Persistant storage
 * NodeJS - Raspberry Pi-hosted local network server
 * React - React Router + useReducer / useContext for app-wide state management
+* Yelp API - For key, sign up at [Yelp Fusion](https://fusion.yelp.com/) 
 
 ## :heavy_check_mark: Setup
 * .env file in root folder ~ example:
